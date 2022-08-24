@@ -17,13 +17,14 @@ import com.example.chrisfitapp.databinding.ActivityLoginBinding
 import com.example.chrisfitapp.R
 
 class LoginActivity : AppCompatActivity() {
-
     private lateinit var loginViewModel: LoginViewModel
     private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        //Mavericks vs Suns
+//
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

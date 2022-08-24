@@ -16,12 +16,14 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     private var details = arrayOf("Item one details", "Item two details", "Item three details", "Item four details", "Item five details", "Item six details","Item seven details", "Item eight details")
 
-    private var images = intArrayOf(R.drawable.solar_eclipse,R.drawable.solar_eclipse, R.drawable.solar_eclipse, R.drawable.solar_eclipse,R.drawable.solar_eclipse,R.drawable.solar_eclipse,R.drawable.solar_eclipse,R.drawable.solar_eclipse)
+    private var images = intArrayOf(R.drawable.solar_eclipse,R.drawable.solar_eclipse, R.drawable.solar_eclipse,
+        R.drawable.solar_eclipse,R.drawable.solar_eclipse,R.drawable.solar_eclipse,R.drawable.solar_eclipse,R.drawable.solar_eclipse)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
         val v =  LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent, false)
         return ViewHolder(v)
     }
+
     override fun getItemCount(): Int {
         return titles.size
 
