@@ -16,7 +16,7 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     private var details = arrayOf("Item one details", "Item two details", "Item three details", "Item four details", "Item five details", "Item six details","Item seven details", "Item eight details")
 
-    private var images = intArrayOf(R.drawable.solar_eclipse,R.drawable.solar_eclipse, R.drawable.solar_eclipse,
+    private var images = intArrayOf(R.drawable.usman,R.drawable.solar_eclipse, R.drawable.solar_eclipse,
         R.drawable.solar_eclipse,R.drawable.solar_eclipse,R.drawable.solar_eclipse,R.drawable.solar_eclipse,R.drawable.solar_eclipse)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
@@ -48,7 +48,6 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
             itemView.setOnClickListener {
                     val position: Int = adapterPosition
-
                 Toast.makeText( itemView.context, "you clicked on $(titles[position]}", Toast.LENGTH_LONG).show()
 
 
